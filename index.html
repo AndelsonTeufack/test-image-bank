@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -25,6 +25,7 @@
     <title>SMART - Banque d'images</title>
   </head>
   <body>
+    <!-- ======================= Barre D'informations==========================-->
     <nav class="navbar"></nav>
 
     <div class="search-container animate__animated animate__fadeIn">
@@ -52,11 +53,15 @@
       </div>
     </div>
 
+    <!--=================== Section01: Contient l'entiereté du premier bloc d'information (miniatures, image pricipale et informastions)-->
     <section class="main-content">
+
+      <!--01: Images miniatures-->
       <div class="thumbnail-column">
         <img
           src="assets/imgs/voiture1.jpeg"
           alt="Miniature 1"
+          loading="lazy"
           class="thumbnail active"
           data-full="assets/imgs/voiture1.jpeg"
         />
@@ -80,6 +85,7 @@
         />
       </div>
 
+      <!--02: Images Principale-->
       <div class="main-image-container">
         <img
           src="assets/imgs/voiture.jpeg"
@@ -88,6 +94,7 @@
         />
       </div>
 
+      <!--03: Details du produit-->
       <div class="details-section">
         <div class="product-info">
           <h1 class="product-title">BANQUE D'IMAGES</h1>
@@ -95,6 +102,8 @@
             <span class="ex-price">FCFA 15000</span
             ><span class="new-price"> FCFA 3250</span>
           </p>
+
+          <!--Notation du prduit-->
           <div class="product-ratings-container">
             <!-- Partie 1: Étoiles de qualité -->
             <div class="product-rating">
@@ -118,23 +127,26 @@
               <i class="fas fa-users"></i>
               <span class="buyers-count">356 acheteurs</span>
             </div>
+
+            <!--Bouton d'achat-->
             <button
               class="btn btn-buy animate__animated animate__pulse animate__infinite"
             >
               Acheter maintenant
             </button>
+
             <div class="countdown-section" data-aos="fade-up">
               <div class="countdown-container">
-                <div class="countdown-box">
-                  <div class="countdown-value" id="days">00</div>
-                </div>
-                <span class="colon">:</span>
                 <div class="countdown-box">
                   <div class="countdown-value" id="hours">00</div>
                 </div>
                 <span class="colon">:</span>
                 <div class="countdown-box">
                   <div class="countdown-value" id="minutes">00</div>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-box">
+                  <div class="countdown-value" id="seconds">00</div>
                 </div>
               </div>
 
@@ -221,6 +233,8 @@
         </div>
       </div>
     </section>
+
+    <!--Section contenant la description additionnel sur le produit-->
     <section class="additional-info">
       <div class="container-fluid">
         <div class="row">
@@ -423,6 +437,7 @@
                 </div>
               </div>
 
+              <!--Les etoiles de notation-->
               <div class="form-card">
                 <div class="rating-input">
                   <span>Votre note :</span>
@@ -448,6 +463,8 @@
         </div>
       </div>
     </section>
+
+    <!--Section qui contient les liens icons afin de nous contacter-->
     <section class="contact-icons">
       <div class="container-fluid">
         <a href="mailto:contact@smart.com" class="contact-link">
@@ -458,6 +475,8 @@
         </a>
       </div>
     </section>
+
+    <!--Section finale contenant le footer-->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-blocks">

@@ -44,28 +44,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // Compte à rebours
   function updateCountdown() {
     const now = new Date();
-    const endDate = new Date();
-    endDate.setDate(now.getDate() + 3);
-
+    const endDate = new Date(now);
+    endDate.setHours(now.getHours() + 12); // 12 heures à partir de maintenant
+    
     const diff = endDate - now;
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    
+    // Calcul des jours, heures, minutes
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+    // Mise à jour de l'affichage
+    document.getElementById('hours').textContent = Math.floor(hours).toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = Math.floor(minutes).toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
 
-    document.getElementById("days").textContent = days
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("hours").textContent = hours
-      .toString()
-      .padStart(2, "0");
-    document.getElementById("minutes").textContent = minutes
-      .toString()
-      .padStart(2, "0");
-  }
-
+  // Mettre à jour immédiatement
   updateCountdown();
-  setInterval(updateCountdown, 60000);
+    
+  // Mettre à jour toutes les secondes
+  setInterval(updateCountdown, 1000);
 
   // Animation au chargement
   gsap.from(".search-bar", {
