@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>SMART - Banque d'images</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <div class="search-container animate__animated animate__fadeIn">
+      <div class="search-bar d-flex align-items-center">
+        <div class="d-flex align-items-center me-auto">
+          <div class="brand-circle">S</div>
+          <span class="brand-name">SMART</span>
+        </div>
+        <div class="search-actions">
+          <button class="btn btn-more rounded-circle">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <div class="dropdown-actions">
+            <button class="btn-action">
+              <i class="fas fa-search"></i> Rechercher
+            </button>
+            <button class="btn-action">
+              <i class="fas fa-user"></i> Connexion
+            </button>
+            <button class="btn-action">
+              <i class="fas fa-shopping-cart"></i> Panier
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-content">
+      <div class="thumbnail-column">
+        <img
+          src="assets/imgs/voiture1.jpeg"
+          alt="Miniature 1"
+          class="thumbnail active"
+          data-full="assets/imgs/voiture1.jpeg"
+        />
+        <img
+          src="assets/imgs/voiture2.jpeg"
+          alt="Miniature 2"
+          class="thumbnail"
+          data-full="assets/imgs/voiture2.jpeg"
+        />
+        <img
+          src="assets/imgs/voiture3.jpeg"
+          alt="Miniature 3"
+          class="thumbnail"
+          data-full="assets/imgs/voiture3.jpeg"
+        />
+        <img
+          src="assets/imgs/voiture4.jpeg"
+          alt="Miniature 4"
+          class="thumbnail"
+          data-full="assets/imgs/voiture4.jpeg"
+        />
+      </div>
+
+      <div class="main-image-container">
+        <img
+          src="assets/imgs/voiture.jpeg"
+          alt="Image principale"
+          class="main-image animate__animated animate__fadeIn"
+        />
+      </div>
+
+      <div class="details-section">
+        <div class="product-info">
+          <h1 class="product-title">BANQUE D'IMAGES</h1>
+          <p class="product-description">
+            <span class="ex-price">FCFA 15000</span
+            ><span class="new-price"> FCFA 3250</span>
+          </p>
+          <div class="product-ratings-container">
+            <!-- Partie 1: Étoiles de qualité -->
+            <div class="product-rating">
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </span>
+            </div>
+
+            <!-- Partie 2: Nombre d'avis -->
+            <div class="product-reviews">
+              <i class="fas fa-comment-alt"></i>
+              <span class="reviews-count">128 avis</span>
+            </div>
+
+            <!-- Partie 3: Nombre d'acheteurs -->
+            <div class="product-buyers">
+              <i class="fas fa-users"></i>
+              <span class="buyers-count">356 acheteurs</span>
+            </div>
+            <button
+              class="btn btn-buy animate__animated animate__pulse animate__infinite"
+            >
+              Acheter maintenant
+            </button>
+            <div class="countdown-section" data-aos="fade-up">
+              <div class="countdown-container">
+                <div class="countdown-box">
+                  <div class="countdown-value" id="days">00</div>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-box">
+                  <div class="countdown-value" id="hours">00</div>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-box">
+                  <div class="countdown-value" id="minutes">00</div>
+                </div>
+              </div>
+
+              <p class="social-text">Moyens de paiement disponibles</p>
+              <div class="payment-methods">
+                <img
+                  src="assets/imgs/colors/blueColor.png"
+                  alt="Visa"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/darkColor.jpeg"
+                  alt="Mastercard"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/greenColor.png"
+                  alt="PayPal"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/pinkColor.png"
+                  alt="Orange Money"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/redColor.jpeg"
+                  alt="MTN Mobile Money"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/yellowColor.png"
+                  alt="Bitcoin"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/blueColor.png"
+                  alt="Apple Pay"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/darkColor.jpeg"
+                  alt="Google Pay"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/greenColor.png"
+                  alt="Amazon Pay"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/pinkColor.png"
+                  alt="Skrill"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/redColor.jpeg"
+                  alt="Airtel Money"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/yellowColor.png"
+                  alt="Western Union"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/blueColor.png"
+                  alt="MoneyGram"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/darkColor.jpeg"
+                  alt="Payoneer"
+                  class="payment-method"
+                />
+                <img
+                  src="assets/imgs/colors/greenColor.png"
+                  alt="Wise"
+                  class="payment-method"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="additional-info">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Première colonne -->
+          <div class="col-lg-8 info-section">
+            <div class="info-content">
+              <h2>BANQUE D'IMAGE</h2>
+              <p class="lorem-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                in dui mauris. Vivamus hendrerit arcu sed erat molestie
+                vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh
+                porttitor. Ut in nulla enim. Phasellus molestie magna non est
+                bibendum non venenatis nisl tempor. Sed auctor neque eu tellus
+                rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus
+                molestie magna non est bibendum non venenatis nisl tempor.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed
+                auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in
+                nulla enim. Phasellus molestie magna non est bibendum nonUt in
+                nulla enim. Phasellus molestie magna non est bibendum nonUt in
+                nulla enim. Phasellus molestie magna non est bibendum nonUt in
+                nulla enim. Phasellus molestie magna non est bibendum nonUt in
+                nulla enim. Phasellus molestie magna non est bibendum non
+              </p>
+
+              <div class="spacer"></div>
+
+              <p class="lorem-text">
+                Suspendisse in orci enim. Vivamus hendrerit arcu sed erat
+                molestie vehicula.venenatis nisl tempor. Sed auctor neque eu
+                tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
+                Phasellus molestie magna non est bibendum non venenatis nislUt
+                in nulla enim. Phasellus molestie magna non est bibendum non
+                tempor.
+              </p>
+
+              <div class="spacer"></div>
+
+              <p class="lorem-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                in dui mauris. Vivamus hendrerit arcu sed erat molestie
+                vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh
+                porttitor. Ut in nulla enim. Phasellus molestie magna non est
+                bibendum non venenatis nisl tempor. Sed auctor neque eu tellus
+                rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus
+                molestie magna non est bibendum non venenatis nisl tempor.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                mauris. Vivamus hendrerit arcu sed erat molestie vehicula.Ut in
+                nulla enim. Phasellus molestie magna non est bibendum nonUt in
+                nulla enim. Phasellus molestie magna non est bibendum non
+              </p>
+            </div>
+
+            <div class="faq-section">
+              <table class="faq-table table table-striped">
+                <thead>
+                  <tr>
+                    <th>Questions fréquemment posées</th>
+                    <th class="thx"><i class="fas fa-info-circle"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Comment télécharger mes images achetées ?</td>
+                    <td><i class="fas fa-plus"></i></td>
+                  </tr>
+                  <tr class="row-blue">
+                    <td>Quels sont les formats disponibles ?</td>
+                    <td><i class="fas fa-plus"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Deuxième Column-->
+          <div class="col-lg-4 secondary-section">
+            <!-- Container 1 - Avis clients -->
+            <div class="container-1">
+              <h3 class="section-title">Ce qu'ils pensent de nous</h3>
+              <div class="reviews-scroll">
+                <!-- Avis 1 -->
+                <div class="review-card">
+                  <div class="review-header">
+                    <img
+                      src="assets/imgs/man.jpeg"
+                      alt="Profil"
+                      class="profile-img"
+                    />
+                    <div class="reviewer-info">
+                      <span class="reviewer-name">Jean Dupont</span>
+                      <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Excellente qualité d'images, téléchargement instantané après
+                    paiement. Je recommande vivement !
+                  </p>
+                </div>
+
+                <!-- Avis 2 -->
+                <div class="review-card">
+                  <div class="review-header">
+                    <img
+                      src="assets/imgs/man.jpeg"
+                      alt="Profil"
+                      class="profile-img"
+                    />
+                    <div class="reviewer-info">
+                      <span class="reviewer-name">Marie Lambert</span>
+                      <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Collection impressionnante mais certains formats manquent.
+                    Service client réactif cependant.
+                  </p>
+                </div>
+
+                <!-- Avis 3 -->
+                <div class="review-card">
+                  <div class="review-header">
+                    <img
+                      src="assets/imgs/man.jpeg"
+                      alt="Profil"
+                      class="profile-img"
+                    />
+                    <div class="reviewer-info">
+                      <span class="reviewer-name">Thomas Martin</span>
+                      <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Parfait pour mes besoins professionnels. Les images sont
+                    d'une grande qualité et les prix raisonnables.
+                  </p>
+                </div>
+
+                <!-- Avis 4 -->
+                <div class="review-card">
+                  <div class="review-header">
+                    <img
+                      src="assets/imgs/man.jpeg"
+                      alt="Profil"
+                      class="profile-img"
+                    />
+                    <div class="reviewer-info">
+                      <span class="reviewer-name">Sophie Leroy</span>
+                      <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    La meilleure banque d'images que j'ai utilisée jusqu'à
+                    présent. Interface intuitive et choix varié.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Container 2 - Formulaire d'avis -->
+            <div class="container-2">
+              <h3 class="section-title">Rédiger un avis</h3>
+
+              <div class="form-card">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Votre nom"
+                  />
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Votre email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-card">
+                <div class="rating-input">
+                  <span>Votre note :</span>
+                  <div class="stars-input">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+
+                <textarea
+                  class="form-control review-textarea"
+                  rows="4"
+                  placeholder="Votre avis..."
+                ></textarea>
+
+                <button class="btn submit-review">Envoyer l'avis</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-icons">
+      <div class="container-fluid">
+        <a href="mailto:contact@smart.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/+237690819035" class="contact-link whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-blocks">
+          <!-- Bloc 1 - SMART M -->
+          <div class="footer-block">
+            <h4>SMART M</h4>
+            <div class="country-info">
+              <img src="assets/imgs/cameroon-flag.png" alt="Drapeau Cameroun" />
+              <span>Cameroun</span>
+            </div>
+          </div>
+
+          <!-- Bloc 2 - Liens -->
+          <div class="footer-block">
+            <h4>Liens</h4>
+            <p>Accueil</p>
+            <p>Collections</p>
+            <p>Tarifs</p>
+            <p>Blog</p>
+          </div>
+
+          <!-- Bloc 3 - Légal -->
+          <div class="footer-block">
+            <h4>Légal</h4>
+            <p>Conditions d'utilisation</p>
+            <p>Politique de confidentialité</p>
+            <p>Cookies</p>
+            <p>Mentions légales</p>
+          </div>
+
+          <!-- Bloc 4 - Contact -->
+          <div class="footer-block">
+            <h4>Nous contacter</h4>
+            <div class="contact-icons-footer">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            SMART M - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Libero at nesciunt doloribus voluptates voluptatibus, nemo animi
+            iure i.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Libero at nesciunt doloribus voluptates voluptatibus, nemo animi
+            iure i.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Libero at nesciunt doloribusiure i.
+          </p>
+        </div>
+
+        <div class="footer-copyright">
+          <span>© 2025 SMART M. Tous droits réservés.</span>
+          <button class="btn btn-footer">
+            Retour en haut <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
